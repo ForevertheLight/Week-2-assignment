@@ -6,5 +6,5 @@ Pass_W="Joshua@2025"
 while Password != Pass_W:
     print("sorry, password authentication didn't work. please try again. ")
     Password=input("Enter a Password:")
-print("Well Done!")
+print("Access Granted")
     

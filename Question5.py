@@ -4,4 +4,4 @@ Number=int(input("Enter a Number:"))
 while Number <0:
     print("Enter a Positive Number")
     Number=int(input("Enter a Number"))
-print("You have entered a correct number")
+print("Good Job! You have entered a correct number",Number)
