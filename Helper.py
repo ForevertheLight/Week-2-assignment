@@ -34,3 +34,8 @@ def Exponent_Function(a:float ,b:float)-> float:
 #Compare Function
 def Compare_Function(a,b)-> bool:
     return a==b  
+
+#Multiplication Function
+def Multiply_Function(a: float,b: float)-> float:
+    return(a*b)
+
