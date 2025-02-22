@@ -1,61 +1,80 @@
-#Keyword Arguments
-#Create a Function
-def foo(x=1,y=2,z=3):return(2*x,4*y,8*z)
+# #Keyword Arguments
+# #Create a Function
+# def foo(x=1,y=2,z=3):return(2*x,4*y,8*z)
 
-#Call Function
-Call=foo(2,3,4)
-print('Calling Function','foo' '=',Call)
+# #Call Function
+# Call=foo(2,3,4)
+# print('Calling Function','foo' '=',Call)
 
-#Calling Function's Arguments out of order
-New_Call=foo(z=4,x=2,y=3)
-print('Calling Arguments out of order = ',New_Call)
+# #Calling Function's Arguments out of order
+# New_Call=foo(z=4,x=2,y=3)
+# print('Calling Arguments out of order = ',New_Call)
 
-#Combining Functions with Defaults
-Combo_Call=foo()
-print('Combining Functions with Defaults = ',Combo_Call)
+# #Combining Functions with Defaults
+# Combo_Call=foo()
+# print('Combining Functions with Defaults = ',Combo_Call)
 
-#Arguments to Function
-def square(x): return (x*x)
-def applier(q,x): return q(x)
+# #Arguments to Function
+# def square(x): return (x*x)
+# def applier(q,x): return q(x)
 
-#Output
-print('Arguments to Function = ',applier(square,2))
+# #Output
+# print('Arguments to Function = ',applier(square,2))
 
-#Lambda Notation
-A_Lamb=(lambda x,y: 2*x + y)
+# #Lambda Notation
+# A_Lamb=(lambda x,y: 2*x + y)
 
-#Call Lambda 
-print('Lambda Notation = ',A_Lamb(3,4))
+# #Call Lambda 
+# print('Lambda Notation = ',A_Lamb(3,4))
 
-#Lambda Composition
-def twice (f): return lambda x: f(f(x))
+# #Lambda Composition
+# def twice (f): return lambda x: f(f(x))
 
-#Lambda Composition Output
-Quad=twice(square)
-print('Quad of',2,'=',Quad(2))
+# #Lambda Composition Output
+# Quad=twice(square)
+# print('Quad of',2,'=',Quad(2))
 
-#Pass by Reference 
-def Same_List(List):
-    return List
+# #Pass by Reference 
+# def Same_List(List):
+#     return List
 
-#Call
-MyList=['X']
-Same_List(MyList)
-print(MyList)
+# #Call
+# MyList=['X']
+# Same_List(MyList)
+# print(MyList)
 
-#Create Another Function (Set_List)
-def Set_List(List):
-    List=['A']
-    return(List)
+# #Create Another Function (Set_List)
+# def Set_List(List):
+#     List=['A']
+#     return(List)
 
-MyList=['X']
-Same_List(MyList)
-print(MyList)
+# MyList=['X']
+# Same_List(MyList)
+# print(MyList)
 
-def Add(List):
-    list.append['B']
-    return (List)
+# def Add(List):
+#     list.append['B']
+#     return (List)
 
-Add(MyList)
-print(MyList)
+# Add(MyList)
+# print(MyList)
 
+# A=2
+# B=6
+# C=2
+# Result=(A**6+B/2)//2
+# print(Result)
+# Result2=((25%C)**2-3//1)%9
+# print(Result2)
+
+#Keyword Argument 
+# def increment(number,by):
+#     return number + by
+
+# print(increment(2,by=1)) #By=1 is a Keyword argument
+
+#Default Argument
+def increment(number,by=1): #By=1 is a default argument
+    return number + by
+
+print(increment(2))
