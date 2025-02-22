@@ -6,7 +6,7 @@ numbers=[1,2,3,4,5,6,7,8,9,10]
 for x in numbers:
     if x%2==0:
         Even_Count+=1
-        print(Even_Count)
     else:
          Odd_Count+=1
-         print(Odd_Count)
+print(Even_Count, 'is even')
+print(Odd_Count,'is Odd')

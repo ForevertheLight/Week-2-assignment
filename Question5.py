@@ -2,6 +2,6 @@
 #And keeps asking until the user enters a positive number using a while loop
 Number=int(input("Enter a Number:"))
 while Number <0:
-    print("Enter a Positive Number")
-    Number=int(input("Enter a Number"))
-print("Good Job! You have entered a correct number",Number)
+    print("Please! Enter Positive Number Only")
+    Number=int(input("Enter a Number:"))
+print("Good Job! You have entered a positive number",Number)
